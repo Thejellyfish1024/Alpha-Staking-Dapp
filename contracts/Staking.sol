@@ -6,6 +6,10 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
+// reward token- 0xd2e653C0cff79EeDDdc9e4f86f5fBDb45f462224
+// stake token - 0xDAE9472b7053dA1A5168BC0e906Eca00d141f78F
+// staking - 0xd4032284E7ce01aeABe568d39B9132e6FA5CFB3c
+
 contract Staking is ReentrancyGuard{
   using SafeMath for uint256;
   IERC20 public s_stakingToken;

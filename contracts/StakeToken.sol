@@ -1,11 +1,15 @@
 // contracts/GLDToken.sol
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract StakeToken is ERC20 {
     constructor(uint256 initialSupply) ERC20("StakeToken", "STK") {
-        _mint(msg.sender, initialSupply);
+        _mint(msg.sender, initialSupply*10**18);
     }
+ 
 }
+
+// 0xDAE9472b7053dA1A5168BC0e906Eca00d141f78F
+// 0xDAE9472b7053dA1A5168BC0e906Eca00d141f78F
